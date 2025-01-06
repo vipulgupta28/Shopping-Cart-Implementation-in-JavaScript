@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <button id="cart-btn">Cart</button>
+            <p id="number">(0)</p>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="it">
+            <img src="https://cdn.shopify.com/s/files/1/0061/2909/0648/files/PURE-INVISIBLE-WIRED-PADDED-BRA-Beige-10188657-6106-PR-v1.jpg?v=1701387629&width=869" alt="Bra">
+            <p>Bra</p>
+            <button onclick="addToCart('Bra', 'https://cdn.shopify.com/s/files/1/0061/2909/0648/files/PURE-INVISIBLE-WIRED-PADDED-BRA-Beige-10188657-6106-PR-v1.jpg?v=1701387629&width=869')">Add To Cart</button>
+        </div>
+
+        <div class="it">
+            <img src="https://www.bareessentials.in/cdn/shop/products/H5244db1bcded4ee387094530e25e3c6d2.jpg?v=1631165942" alt="Bra">
+            <p>Panties</p>
+            <button onclick="addToCart('Panties', 'https://www.bareessentials.in/cdn/shop/products/H5244db1bcded4ee387094530e25e3c6d2.jpg?v=1631165942')">Add To Cart</button>
+        </div>
+
+        <div class="it">
+            <img src="https://cdn-images.farfetch-contents.com/14/40/38/24/14403824_21202348_1000.jpg" alt="Thongs">
+            <p>Thongs</p>
+            <button onclick="addToCart('Thongs', 'https://cdn-images.farfetch-contents.com/14/40/38/24/14403824_21202348_1000.jpg')">Add To Cart</button>
+        </div>
+        <div class="it">
+            <img src="https://www.victoriassecret.in/on/demandware.static/-/Sites-vs_master_catalog/default/dwd584dedb/large/1125082706T2_OF_F.jpg" alt="BabyDolls">
+            <p>BabyDolls</p>
+            <button onclick="addToCart('BabyDolls', 'https://www.victoriassecret.in/on/demandware.static/-/Sites-vs_master_catalog/default/dwd584dedb/large/1125082706T2_OF_F.jpg')">Add To Cart</button>
+        </div>
+        <div class="it">
+            <img src="https://www.realsimple.com/thmb/uroHsYRu-2USccenfNMJM9i4xjs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bralette-vs-bra-realsimple-GettyImages-921437374-6c52318e5e1d433f86a023d88ede0df7.jpg" alt="BraLettes">
+            <p>BraLettes</p>
+            <button onclick="addToCart('BraLettes', 'https://www.realsimple.com/thmb/uroHsYRu-2USccenfNMJM9i4xjs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bralette-vs-bra-realsimple-GettyImages-921437374-6c52318e5e1d433f86a023d88ede0df7.jpg')">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+    </div>
+
+  <script src="./script.js></script>
+</body>
+</html>
